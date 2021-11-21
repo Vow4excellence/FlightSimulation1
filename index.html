@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    
     <a-scene background="color:#026F90">
 
       <a-entity id="look" look-controls camera position="0 2 20"></a-entity>
@@ -36,10 +37,21 @@
         scale="0.3 0.3 0.3"
         animation="property: position; to: 0 0 1000;easing:linear; loop: true; dur: 150000"
         terrain-rotation-reader
+        
       >
       </a-entity>
 
-      
+      <!-- Plane -->
+      <a-entity
+        id="plane_model"
+        gltf-model="#plane"
+        position="0 0 15"
+        scale="1 1"
+        rotation="0 90 0"
+        plane-rotation-reader        
+      >
+      </a-entity>
+
     </a-scene>
   </body>
 </html>
